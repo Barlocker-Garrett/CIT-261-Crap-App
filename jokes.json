@@ -1,41 +1,46 @@
 [{
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body0",
-        "pun": "This is where the pun goes0"
+        "text": "The 2nd fastest thing is poop, what is even faster?",
+        "pun": "Water splashing back up."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body1",
-        "pun": "This is where the pun goes1"
+        "text": "Do you have a bathroom? No, it’s only for the employees.",
+        "pun": "Well, I’d like to apply for a job."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body2",
-        "pun": "This is where the pun goes2"
+        "text": "One added negative, about being blind",
+        "pun": "You never know when your done wiping."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body3",
-        "pun": "This is where the pun goes3"
-}, {
-        "alive": "1",
-        "shown": "1",
-        "text": "Text of the body4",
-        "pun": "This is where the pun goes4"
+        "text": "If White Castle was a real castle…",
+        "pun": "The moat would be made of diarrhea."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body5",
-        "pun": "This is where the pun goes5"
+        "text": "Have you heard of the constipated mathematician?",
+        "pun": "He worked it out with a pencil."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body6",
-        "pun": "This is where the pun goes6"
+        "text": "What’s the true definition of bravery?",
+        "pun": "Chancing a fart when you know you’ve had diarrhea."
 }, {
         "alive": 0,
         "shown": 0,
-        "text": "Text of the body7",
-        "pun": "This is where the pun goes7"
+        "text": "Support Bacteria!",
+        "pun": "They’re the only culture some people have."
+}, {
+        "alive": 0,
+        "shown": 0,
+        "text": "What would you call a person who sends fart jokes by email all the time?",
+        "pun": "A person who passed gas frequently."
+}, {
+        "alive": 0,
+        "shown": 0,
+        "text": "What do you get if you eat beans and onions?",
+        "pun": "Tear gas."
 }]
