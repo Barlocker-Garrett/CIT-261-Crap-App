@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- title and meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Crap App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- js -->
+    <script src="/javaScript/main.js"></script>
+</head>
+<body ontouchstart="" onload="loadJSON()">
+    <div class="wrapper">
+        <header class="header__primary clearfix">
+        </header>
+        <!-- /.primary-header -->
+        <main>
+            <div class="container">
+                <div class="section">
+                    <h2 class="section__title">Crap App</h2>
+                    <div class="section__content clearfix">
+                        <div class="card effect__hover">
+                            <div class="card__front">
+                                <span class="card__text" id="text"></span>
+                            </div>
+                            <div class="card__back">
+                                <span class="card__text" id="pun"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /card -->
+                </div>
+                <!-- /section -->
+            </div>
+        </main>
+        <!-- /main -->
+    </div>
+    <!-- /#wrapper -->
+    <button type="button" onclick="loadLocalStorage()">Load new Joke</button>
+</body>
+</html>
