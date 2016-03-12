@@ -1,20 +1,12 @@
 var httpRequest;
-var Jokes = JSON.parse(localStorage.Jokes || null) || {};
-var Facts = JSON.parse(localStorage.Facts || null) || {};
 
-function jokesOrFacts() {
-    console.log(document.getElementById('Topic').title);
-    if (document.getElementById('Topic').title === "Jokes"){
-        makeRequest('jokes.json');
-    }
-    else if (document.getElementById('Topic').title === "Facts") {
-        makeRequest('facts.json');
-    }
+function loadContent() {
+    makeRequest('content.json');
 }
 
 function makeRequest(url) {
     httpRequest = new XMLHttpRequest();
-    
+
     if (!httpRequest) {
         alert('Giving up :( Cannot create an XMLHTTP instance');
         return false;
@@ -27,30 +19,53 @@ function makeRequest(url) {
 function alertContents() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
-            Jokes = JSON.parse(httpRequest.responseText);
+            Content = JSON.parse(httpRequest.responseText);
         }
-        if (localStorage.getItem("Jokes") === null) {
-            localStorage.setItem("Jokes", JSON.stringify(Jokes));
-            loadLocalStorage();
+        if (localStorage.getItem("Content") === null) {
+            localStorage.setItem("Content", JSON.stringify(Content));
+            loadObjectsFromLocal();
         }
     }
 }
 
-function loadLocalStorage() {
-    if (Jokes.length < 1) {
-        Jokes = JSON.parse(localStorage.Jokes);
+// THESE SPLICES ARE HARD CODED FOR THE NUMBER OF JOKES/FACTS WE HAVE
+function loadObjectsFromLocal(reset) {
+    if (Content.length < 1 || reset === true) {
+        Content.splice(0,100);
+        Content = JSON.parse(localStorage.Content);
     }
-    loadDataFromObject();
+    if (document.getElementById('Topic').title === 'Jokes') {
+        Content.splice(9, 100);
+    // THE 29 IN THE ELSE IF IS THE TOTAL NUMBER OF JOKES AND FACTS
+    } else if (document.getElementById('Topic').title === 'Facts' && Content.length === 29) {
+        Content.splice(0, 9);
+    }
+    selectContent();
 }
 
-function loadDataFromObject() {
+function selectContent() {
     var index;
-    index = Math.floor(Math.random() * Jokes.length);
+
+    index = Math.floor(Math.random() * Content.length);
     
-    document.getElementById("text").innerHTML = Jokes[index].text;
-    document.getElementById("pun").innerHTML = Jokes[index].pun;
-    Jokes.splice(index, 1);
+    if(document.getElementById('Topic').title === 'Jokes') {
+        document.getElementById("text").innerHTML = Content[index].joke;
+        document.getElementById("pun").innerHTML = Content[index].pun;
+    }
+    else if (document.getElementById('Topic').title === 'Facts') {
+        document.getElementById("text").innerHTML = Content[index].fact;
+    }
     
-    console.log(JSON.parse(localStorage.Jokes)); // THIS LINE
-    console.log(Jokes);                          // AND THIS LINE ARE TO SHOW THAT IT WORKS
+    Content.splice(index, 1);
+    console.log(Content); //THIS SHOWS IN THE CONSOLE THAT IT WORKS
+}
+
+function changeToFacts() {
+    document.getElementById('Topic').title = 'Facts';
+    loadObjectsFromLocal(true);
+}
+
+function changeToJokes() {
+    document.getElementById('Topic').title = 'Jokes';
+    loadObjectsFromLocal(true);
 }
