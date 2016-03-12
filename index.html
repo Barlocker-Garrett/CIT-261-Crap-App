@@ -11,7 +11,7 @@
     <!-- js -->
     <script src="javaScript/main.js"></script>
 </head>
-<body ontouchstart="" onload="jokesOrFacts()">
+<body ontouchstart="" onload="loadContent()">
     <div class="wrapper">
         <header class="header__primary clearfix">
         </header>
@@ -38,6 +38,8 @@
         <!-- /main -->
     </div>
     <!-- /#wrapper -->
-    <button type="button" onclick="loadLocalStorage()">Load new Joke</button>
+    <button type="button" onclick="loadObjectsFromLocal()">Load new Content</button>
+    <button type="button" onclick="changeToJokes()">Change to Jokes</button>
+    <button type="button" onclick="changeToFacts()">Change to Facts</button>
 </body>
 </html>
