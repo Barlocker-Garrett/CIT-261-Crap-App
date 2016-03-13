@@ -1,0 +1,524 @@
+@import url('normalize.css');
+
+*{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * Basic Style Definitions
+*/
+
+body, html {
+  background-color: #f0e6d7;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;  
+}
+
+.wrapper {
+    background-color: #f0e6d7;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+p {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    color: #7e623c;
+    font-size: 2vw;
+}
+
+h1, h2, h3 {
+    font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
+}
+
+a, a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+/*
+ * Header
+*/
+    
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+#navbuttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.logo {
+    width: 20vw;
+    height: 20vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo img {
+    max-height: 18vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.menubutton {
+    width: 40vw;
+    height: 20vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    background-color: #3399cc;
+    border-style: solid;
+    border-color: #003366;
+    border-width: .25vw;
+    
+    color: #fff;
+    font-size: 3vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+/*
+ * Main Section
+*/
+
+#main {
+    background-color: #f0e6d7;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    padding:0vw;
+    margin: 0vw;
+    align-items: center;
+    justify-content: center;
+}
+
+/*
+ * Poop Logo with Shake animation
+*/
+
+.animated { 
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 10;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: bounceIn;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    margin: 8vh 10vw 2vh 10vw;
+    padding:0vw;
+} 
+
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-20px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(20px);} 
+} 
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-20px);} 
+    20%, 40%, 60%, 80% {transform: translateX(20px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+
+#poop_logo {
+    
+}
+
+/*
+ * Site Title under logo
+*/
+
+.page_title {
+    color: #7e623c;
+    font-size: 3vw;
+    padding:0vw;
+    margin: 0vw;
+}
+
+/*
+*  Responsive Flexbox
+*/
+
+@media only screen and (min-width:1280px) {
+header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+#navbuttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 20vh;
+}
+
+.logo {
+    width: 20vw;
+    height: 20vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo img {
+    max-height: 18vh;
+}
+
+.menubutton {
+    width: 40vw;
+    height: 20vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    background-color: #3399cc;
+    border-style: solid;
+    border-color: #297aa3;
+    border-width: .25vw;
+    
+    color: #fff;
+    font-size: 2.5vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+.animated { 
+    -webkit-animation-name: bounceIn;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-iteration-count: 10;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+
+    animation-name: bounceIn;
+    animation-duration: 4s;
+    animation-iteration-count: 10;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+    margin: 8vh 10vw 2vh 10vw;
+    padding:0vw;
+} 
+
+@-webkit-keyframes shake { 
+    0%, 100% {-webkit-transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {-webkit-transform: translateX(-20px);} 
+    20%, 40%, 60%, 80% {-webkit-transform: translateX(20px);} 
+}
+
+@keyframes shake { 
+    0%, 100% {transform: translateX(0);} 
+    10%, 30%, 50%, 70%, 90% {transform: translateX(-20px);} 
+    20%, 40%, 60%, 80% {transform: translateX(20px);} 
+} 
+.shake { 
+    -webkit-animation-name: shake; 
+    animation-name: shake; 
+}
+
+.page_title {
+    color: #7e623c;
+    font-size: 3vw;
+    padding:0vw;
+    margin: 0vw;}}
+
+@media (min-width:768px) and (max-width:1279px) {
+    
+}
+
+@media (min-width:480px) and (max-width:767px) {
+   p {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    color: #7e623c;
+    font-size: 4vw;
+}
+    
+    header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+}
+
+#navbuttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+}
+
+.logo {
+    width: 20vw;
+    height: 15vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo img {
+    max-height: 12vh;
+    
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+.menubutton {
+    width: 40vw;
+    height: 15vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    background-color: #3399cc;
+    border-style: solid;
+    border-color: #003366;
+    border-width: .25vw;
+    
+    color: #fff;
+    font-size: 2.5vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+.page_title {
+    color: #7e623c;
+    font-size: 6vw;
+    padding:0vw;
+    margin: 0vw;
+} 
+}
+
+@media screen and (max-width:479px) {
+    
+    p {
+    font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+    color: #7e623c;
+    font-size: 4vw;
+}
+
+    header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+#navbuttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+}
+
+.logo {
+    width: 20vw;
+    height: 10vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+
+.logo img {
+    max-height: 8vh; 
+}
+
+.menubutton {
+    width: 40vw;
+    height: 10vh;
+    margin: 0vw;
+    padding:0vw;
+    
+    background-color: #3399cc;
+    border-style: solid;
+    border-color: #003366;
+    border-width: .5vw;
+    
+    color: #fff;
+    font-size: 3vw;
+    
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    align-items: center;
+    justify-content: center; 
+}
+.page_title {
+    color: #7e623c;
+    font-size: 7vw;
+    padding:0vw;
+    margin: 0vw;
+}
+}
+
+
+
+
+
