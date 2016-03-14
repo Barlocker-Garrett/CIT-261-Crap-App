@@ -64,10 +64,8 @@
 .card__back {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
-  -webkit-transition: 0.8s;
-  -moz-transition: 0.8s;
-  -o-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
 }
 
 .card__front {
@@ -94,12 +92,12 @@
   line-height: 1vw;
 }
 
-.card.effect__hover:active .card__front {
+.card.effect__click.flipped .card__front {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
 }
 
-.card.effect__hover:active .card__back {
+.card.effect__click.flipped .card__back {
   -webkit-transform: rotateY(0);
           transform: rotateY(0);
 }
