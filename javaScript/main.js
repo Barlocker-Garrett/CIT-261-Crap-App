@@ -1,7 +1,13 @@
 var httpRequest;
 
+// This NumContent object is used for the splicing, this acts "like" an ENUM
+var NumContent;
+              
 function loadContent() {
     makeRequest('content.json');
+    NumContent = Object.freeze({"total":JSON.parse(localStorage.Content).length, 
+                  "jokes":9, 
+                  "facts":20});
 }
 
 function makeRequest(url) {
@@ -20,6 +26,9 @@ function alertContents() {
     if (httpRequest.readyState === XMLHttpRequest.DONE) {
         if (httpRequest.status === 200) {
             Content = JSON.parse(httpRequest.responseText);
+            if (localStorage.getItem("Content") !== null) {
+                loadObjectsFromLocal();
+            }
         }
         if (localStorage.getItem("Content") === null) {
             localStorage.setItem("Content", JSON.stringify(Content));
@@ -28,17 +37,16 @@ function alertContents() {
     }
 }
 
-// THESE SPLICES ARE HARD CODED FOR THE NUMBER OF JOKES/FACTS WE HAVE
 function loadObjectsFromLocal(reset) {
     if (Content.length < 1 || reset === true) {
-        Content.splice(0,100);
+        Content.splice(0,NumContent.total);
         Content = JSON.parse(localStorage.Content);
     }
     if (document.getElementById('Topic').title === 'Jokes') {
-        Content.splice(9, 100);
+        Content.splice(NumContent.jokes, NumContent.total);
     // THE 29 IN THE ELSE IF IS THE TOTAL NUMBER OF JOKES AND FACTS
-    } else if (document.getElementById('Topic').title === 'Facts' && Content.length === 29) {
-        Content.splice(0, 9);
+    } else if (document.getElementById('Topic').title === 'Facts' && Content.length === NumContent.total) {
+        Content.splice(0, NumContent.jokes);
     }
     selectContent();
 }
