@@ -17,7 +17,6 @@
                 <section class="page_title"><h2><a href="/poop/index.php">FUN WITH POOP</a><h2>
                 </section>
             </section>
-
             <footer>
                 <?php include $_SERVER['DOCUMENT_ROOT'].'/poop/modules/footer.php'; ?>
             </footer>

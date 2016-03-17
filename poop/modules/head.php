@@ -5,5 +5,3 @@
 <!-- css -->
 <link href='https://fonts.googleapis.com/css?family=Luckiest+Guy|Josefin+Sans:400,300' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="/poop/css/stylesheet.css"  media="screen">
-<!-- js -->
-<script src="javaScript/main.js"></script>
