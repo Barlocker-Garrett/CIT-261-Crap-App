@@ -278,13 +278,15 @@ header {
 /*
  * The cards
  */
+ #card {
+ 	display:none;
+ }
  
 .card {
   position: relative;
   float: left;
   padding-bottom: 25%;
-  width: 55vw;
-  height: 45vw;
+  width: 85%;
   text-align: center; 
 }
 
