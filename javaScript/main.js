@@ -2,6 +2,7 @@ var httpRequest;
 
 // This NumContent object is used for the splicing, this acts "like" an ENUM
 var NumContent;
+var Content = [];
               
 function loadContent() {
     makeRequest('content.json');
@@ -14,7 +15,7 @@ function makeRequest(url) {
         alert('Giving up :( Cannot create an XMLHTTP instance');
         return false;
     }
-    httpRequest.onreadystatechange = alertContents;
+    httpRequest.onreadystatechange = alertContents();
     httpRequest.open('GET', url);
     httpRequest.send();
 }
@@ -63,19 +64,31 @@ function selectContent() {
     }
     else if (document.getElementById('Topic').title === 'Facts') {
         document.getElementById("text").innerHTML = Content[index].fact;
+        document.getElementById("pun").innerHTML = "";
     }
     
     Content.splice(index, 1);
     console.log(Content); //THIS SHOWS IN THE CONSOLE THAT IT WORKS
 }
 
+function changeToMain () {
+	document.getElementById('card').style.display='none';
+	document.getElementById('home').style.display='initial';
+}
+
 function changeToFacts() {
     document.getElementById('Topic').title = 'Facts';
+    document.getElementById('title').innerHTML = "POOP FACTS";
+    document.getElementById('card').style.display = "initial";
+    document.getElementById('home').style.display='none';
     loadObjectsFromLocal(true);
 }
 
 function changeToJokes() {
     document.getElementById('Topic').title = 'Jokes';
+    document.getElementById('title').innerHTML = "POOP JOKES";
+    document.getElementById('card').style.display = "initial";
+    document.getElementById('home').style.display='none';
     loadObjectsFromLocal(true);
 }
 
@@ -91,6 +104,12 @@ for ( var i = 0, len = cards.length; i < len; i++) {
 function clickListener(card) {
 	card.addEventListener("click", function() {
 		var c = this.classList;
-		c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+		if (c.contains("flipped") === true) {
+			c.remove("flipped");
+			loadObjectsFromLocal();
+		}
+		else {
+			 c.add("flipped");
+		}
 	});
 }
