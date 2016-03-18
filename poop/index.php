@@ -4,7 +4,7 @@
         <?php include $_SERVER['DOCUMENT_ROOT'].'/poop/modules/head.php'; ?>
     </head>
     
-    <body>
+    <body ontouchstart="" onload="loadContent()">
         <section class="wrapper">
             <header>
                 <?php include $_SERVER['DOCUMENT_ROOT'].'/poop/modules/header.php'; ?> 
