@@ -3,4 +3,4 @@
     <!--<li></li>-->
 </ul> 
 <!-- js -->
-<script src="/poop/javaScript/main.js"></script>
+<script src="/javaScript/main.js"></script>

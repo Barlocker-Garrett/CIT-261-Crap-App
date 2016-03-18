@@ -1,3 +1,3 @@
 <nav> 
-    <?php include $_SERVER['DOCUMENT_ROOT'].'/poop/modules/nav.php'; ?>
+    <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/nav.php'; ?>
 </nav> 
