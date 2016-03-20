@@ -14,8 +14,8 @@ function makeRequest(url) {
         alert('Giving up :( Cannot create an XMLHTTP instance');
         return false;
     }
-    httpRequest.onreadystatechange = alertContents();
     httpRequest.open('GET', url);
+    httpRequest.onreadystatechange = alertContents;
     httpRequest.send();
 }
 
