@@ -38,8 +38,8 @@ function alertContents() {
 
 function loadObjectsFromLocal() {
     NumContent = Object.freeze({"total": JSON.parse(localStorage.Content).length,
-        "jokes": 9,
-        "facts": 20});
+        "jokes": 16,
+        "facts": 38});
     
     // IF WE NEED TO RESET THE CONTENT
     if (Content.length < 1) {  
