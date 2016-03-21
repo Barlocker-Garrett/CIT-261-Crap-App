@@ -1,11 +1,11 @@
 [{
-        "joke": "The 2nd fastest thing is poop. <br> What is even faster?",
+        "joke": "The 2nd fastest thing is poop. What is even faster?",
         "pun": "Water splashing back up."
 }, {
         "joke": "Do you have a bathroom? No, it’s only for the employees.",
         "pun": "Well, I’d like to apply for a job."
 }, {
-        "joke": "One added negative, about being blind",
+        "joke": "One added negative, about being blind...",
         "pun": "You never know when you're done wiping."
 }, {
         "joke": "If White Castle was a real castle…",
@@ -47,11 +47,11 @@
         "joke": "Did you hear about the constipated Wheel of Fortune player?",
         "pun": "He wanted to buy a vowel."
 }, {
-        "fact": "Poop should sink listen for the sound of your stool as it hits the water in the toilet. Floating stools are often an indication of high fat content, which can be a sign of malabsorption, a condition in which you can't absorb enough fat and other nutrients from the food you’re ingesting. It’s associated with celiac disease or chronic pancreatitis."
+        "fact": "Poop should sink. Floating stools are often an indication of high fat content, which can be a sign of malabsorption."
 }, {
-        "fact": "The smell of books makes some people need to poop. The Mariko Aoki phenomenon consists of the urge to defecate while visiting a bookstore. Originating in Japan, it is named after the woman who first publicized such an urge."
+        "fact": "The smell of books makes some people need to poop. The Mariko Aoki phenomenon is the urge to defecate while visiting a bookstore."
 }, {
-        "fact": "Wombats have cube shaped poop, which they use to remember where they live."
+        "fact": "Wombats have cube shaped poop which they use to remember where they live."
 }, {
         "fact": "Pandas can poop up to 48 pounds per day"
 }, {
@@ -59,32 +59,68 @@
 }, {
         "fact": "There are four bags of astronaut poop on the moon, left behind by Neil Armstrong on his Apollo mission."
 }, {
-        "fact": "Bird poop is white because birds can't pee. Their kidneys work like ours do, but instead of producing urine, birds excrete a white paste. The paste, along with what comes out of the intestines, unites and is excreted through the bird's cloaca, a multi-purpose hole which means sewer in Latin. And, yes, by multi-purpose, I mean they even mate through it."
+        "fact": "Bird poop is white because birds can't pee. The paste is excreted through the bird's cloaca, a multi-purpose hole which means sewer in Latin."
 }, {
-        "fact": "Cavemen were better equipped to chew and digest many plants and vegetables. They had larger molars and longer digestive tracts better at handling foods rich in indigestible cellulose, like, er, corn, for instance. Evolution has worked against our ability to chew and digest corn, which is why when some kernels get swallowed whole they appear in poop."
+        "fact": "The mega colon of the Balloon Man measured more than 7 feet long and 27 inches in circumference. Not surprisingly, severe constipation did him in."
 }, {
-        "fact": "In the Mutter Museum in Philadelphia, Pennsylvania lay the mega colon of J.W., also know as the Balloon Man in a local freak show exhibit. J.W.'s colon measures more than seven feet in length and a staggering 27 inches in circumference. Not surprisingly, severe constipation did J.W. in at age 29. His bowels contained over 40 lbs of poop at the time of his death."
-}, {
-        "fact": "It has long been postured that Elvis Presley died from straining at the toilet. The King's official cause of death is listed as Arrhythmia, a condition that is not unassciated with bathroom fatalism. In fact, a 1991 study of patients at one Colorado hospital revealed that a quarter of the pulmonary embolism deaths were \"defecation associated.\" This theory certainly falls in-line with Graceland's luxurious bathroom containing a television, telephones, and many, many books."
-}, {
-        "fact": "The gastrointestinal tract's true elasticity is tested only by drug mules. Stuffing, the insertion of something (usually illegal) directly into the rectum is a short-term solution to prison contraband, or quick concealment. The retum is designed to be a storage container, but typically only holds 100ml of feces. Practice makes perfect, however. With practice the retum can be stretched to allow as much as 800 ml or nearly a kilo of cocaine, and that's on the low end of rectal-stetching activities. "
+        "fact": "The Parrot fish eats coral and poops sand, creating many of the small islands and beaches of the Caribbean. "
 }, {
         "fact": "During WWII, German tank drivers thought it was good luck to drive over camel dung. The British found out and made explosives that looked like poop."
 }, {
         "fact": "Some caterpillars can fling their feces up to 3 feet to elude predators."
 }, {
-        "fact": "Piles of manure can be dangerous; microorganisms generate heat as they decompose manure and can spontaneously combust if hot enough. One such fire in 2005 was set by a 4 million pound pile of cow manure near Lincoln, Nebraska. It could not be extinguished using conventional means, as dousing it with water would lead to contaminated run-off. The fire smoldered on for months before it went out."
+        "fact": "Piles of manure can be dangerous; microorganisms generate heat as they decompose manure and can spontaneously combust if hot enough."
 }, {
         "fact": "85% of bathroom related injuries occur when someone falls into the toilet after the seat has been left up!"
 }, {
-        "fact": "The average person visits the toilet 2500 times a year 6-8 times a day. Therefore, in an average lifetime we spend 3 years on the toilet!"
+        "fact": "The average person visits the toilet 6-8 times each day or 2500 times per year. Therefore, in an average lifetime we spend 3 years on the toilet!"
 }, {
         "fact": "One out of ten people have pictures of loved ones in their bathrooms. In other words, 10 percent of people have their family watch them go."
 }, {
         "fact": "Men spend an average of 2.4 minutes longer on the toilet than women do."
 }, {
+        "fact": "Water makes up about 75 percent of your bowel movements. The rest is an often-stinky combination of fiber, dead and live bacteria, other cells, and mucus."
+}, {
+        "fact": "The perfect stool is log-like and S-shaped, not broken up into pieces."
+}, {
+        "fact": "The average American man excretes 150 grams (about one-third of a pound) of stool every day, or the equivalent of 5 tons in a lifetime!"
+}, {
+        "fact": "Digestion takes from 24 to 72 hours, as food travels down your esophagus to your stomach, then to your small and large intestine, and out the anus."
+}, {
+        "fact": "Diarrhea is the result of stool passing too quickly through the large intestine, where most of the water content is absorbed."
+}, {
+        "fact": "It’s normal to pass gas anywhere from 10 to 18 times a day"
+}, {
         "fact": "Women are more likely so discuss bathroom experiences with their friends than men."
 }, {
-        "fact": "The phrase short end of the stick, dates back to the Roman era. Referring to grabbing the wrong end of the stick used to wipe. Which was a sponge attached to a stick."
+        "fact": "The phrase short end of the stick, dates back to the Roman era. It refers to grabbing the wrong end of the stick with a sponge attached, which was used to wipe."
+}, {
+        "fact": "Sloths only poop once a week and it’s called the poo dance."
+}, {
+        "fact": "In the early 20th century, horse poop caused so much pollution that automobiles were seen as the “green” alternative."
+}, {
+        "fact": "All the poop generated on the US Navy’s newest Gerald R. Ford-class aircraft carrier will be vaporized by plasma."
+}, {
+        "fact": "Dubai has no sewer system. Instead they use poop trucks to haul the entire city's excrement away."
+}, {
+        "fact": "3 billion people around the world still rely on charcoal and dung to cook their food…"
+}, {
+        "fact": "Salvador Dalí smeared himself with goat dung before meeting his wife for the first time"
+}, {
+        "fact": "In India, a company makes paper products out of elephant dung."
+}, {
+        "fact": "The outer skin of a corn kernel is indigestible and seem to appear as whole kernels in our stool."
+}, {
+        "fact": "Rabbits can poop up to 500 pellets per day."
+}, {
+        "fact": "The average human poops 2 pounds a day. Elephants produce up to 80 pounds per day!"
+}, {
+        "fact": "White stool can be caused by a lack of bile."
+}, {
+        "fact": "With the help of a high-fiber diet, the longest poop ever recorded was 26 feet."
+}, {
+        "fact": "Poop stinks because bacteria produce foul smelling compounds that are rich in sulfur and nitrogen"
+ }, {
+        "fact": "1/3 of human bowel movments are composed of dead bacteria."   
 }]
 
