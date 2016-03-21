@@ -1,12 +1,12 @@
 [{
-        "joke": "The 2nd fastest thing is poop, what is even faster?",
+        "joke": "The 2nd fastest thing is poop. <br> What is even faster?",
         "pun": "Water splashing back up."
 }, {
         "joke": "Do you have a bathroom? No, it’s only for the employees.",
         "pun": "Well, I’d like to apply for a job."
 }, {
         "joke": "One added negative, about being blind",
-        "pun": "You never know when your done wiping."
+        "pun": "You never know when you're done wiping."
 }, {
         "joke": "If White Castle was a real castle…",
         "pun": "The moat would be made of diarrhea."
@@ -25,6 +25,27 @@
 }, {
         "joke": "What do you get if you eat beans and onions?",
         "pun": "Tear gas."
+}, {
+        "joke": "Why did the girl take toilet paper to the party?",
+        "pun": "Because she was a party pooper!"
+}, {
+        "joke": "What's brown and sits on a piano bench?",
+        "pun": "Beethoven's last movement."
+}, {
+        "joke": "What do you call a person that doesn't fart in public?",
+        "pun": "A private tutor."
+}, {
+        "joke": "Why don't you fart in church?",
+        "pun": "Because you have to sit in your pew."
+}, {
+        "joke": "Did you hear about the constipated accountant?",
+        "pun": "He couldn't budget."
+}, {
+        "joke": "What did one toilet say to the other toilet?",
+        "pun": "You look flushed."
+}, {
+        "joke": "Did you hear about the constipated Wheel of Fortune player?",
+        "pun": "He wanted to buy a vowel."
 }, {
         "fact": "Poop should sink listen for the sound of your stool as it hits the water in the toilet. Floating stools are often an indication of high fat content, which can be a sign of malabsorption, a condition in which you can't absorb enough fat and other nutrients from the food you’re ingesting. It’s associated with celiac disease or chronic pancreatitis."
 }, {
