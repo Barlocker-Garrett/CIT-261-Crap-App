@@ -41,23 +41,33 @@ function loadObjectsFromLocal() {
         "jokes": 9,
         "facts": 20});
     
-    if (Content.length < 1) {
+    // IF WE NEED TO RESET THE CONTENT
+    if (Content.length < 1) {  
         Content.splice(0, NumContent.total);
         Content = JSON.parse(localStorage.Content);
     }
+    
+    // IF THE CONTENT NEED TO BE LOADED FROM JOKES KEY
     if (localStorage.getItem("Jokes") !== null && document.getElementById('Topic').title === 'Jokes'){
             if (Content.length === (NumContent.total))
             {
                 Content.splice(NumContent.jokes, NumContent.total);
+                var Jokes = JSON.parse(localStorage.Jokes);
+                // IF WE NEED TO RESET DON'T SAVE JOKES KEY INTO CONTENT
+                if (Jokes.length !== 0)
+                {
+                    Content = JSON.parse(localStorage.Jokes);
+                }
                 localStorage.setItem("Jokes", JSON.stringify(Content));
             }
         Content = JSON.parse(localStorage.Jokes);
-    }
+    } // THE JOKES KEY NEEDS TO SPLICED INTO LOCAL STORAGE FROM CONTENT KEY
     else if (document.getElementById('Topic').title === 'Jokes') {
         Content.splice(NumContent.jokes, NumContent.total);
         localStorage.setItem("Jokes", JSON.stringify(Content));
     } 
     
+    // IF THE CONTENT NEED TO BE LOADED FROM FACTS KEY
     if (localStorage.getItem("Facts") !== null && document.getElementById('Topic').title === 'Facts'){
             if (Content.length === (NumContent.total))
             {
@@ -65,8 +75,9 @@ function loadObjectsFromLocal() {
                 localStorage.setItem("Facts", JSON.stringify(Content));
             }
         Content = JSON.parse(localStorage.Facts);
-    }
-    if (document.getElementById('Topic').title === 'Facts' && Content.length === NumContent.total) {
+    } // THE FACTS KEY NEEDS TO SPLICED INTO LOCAL STORAGE FROM CONTENT KEY
+    else if (document.getElementById('Topic').title === 'Facts') {
+        Content = JSON.parse(localStorage.Content);
         Content.splice(0, NumContent.jokes);
         localStorage.setItem("Facts", JSON.stringify(Content));
     }
