@@ -37,8 +37,8 @@ function alertContents() {
 
 function loadObjectsFromLocal(reset) {
     NumContent = Object.freeze({"total":JSON.parse(localStorage.Content).length, 
-                                "jokes":9, 
-                                "facts":20});
+                                "jokes":16, 
+                                "facts":38});
                             
     if (Content.length < 1 || reset === true) {
         Content.splice(0,NumContent.total);
