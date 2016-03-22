@@ -249,8 +249,9 @@ header {
 */
 
 .page_title {
+    font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
     color: #7e623c;
-    font-size: 2vw;
+    font-size: 1.5vw;
     padding:0vw;
     margin: 0vw;
 }
@@ -269,7 +270,17 @@ header {
     color: #7e623c;
     font-size: 2vw;
 }
+/*
+ * Site Title under logo
+*/
 
+.page_title {
+    font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
+    color: #7e623c;
+    font-size: 1.5vw;
+    padding:0vw;
+    margin: 0vw;
+}
 /*
  * The cards
  */
@@ -280,15 +291,13 @@ header {
 .card {
   position: relative;
   float: left;
-  padding-bottom: 25%;
-  width: 85%;
+  padding: 0;
+  height: 50vh;
+  width: 90vw;
   text-align: center; 
 }
 
-/* 
-*card fronts and backs
-*/
-
+/* card fronts and backs */
 .card__front,
 .card__back {
   position: absolute;
@@ -318,16 +327,22 @@ header {
 
 /* card text */
 .card__text {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  height: 20px;
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-box-align: center;  
+    -webkit-align-content: center;  
+        -ms-flex-align: center;  
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+  margin: 10vw 10vw 0vw 10vw;
   color: #fff;
-  line-height: 1vw;
+  font-size: 5vh;
+  line-height: 7vh;
 }
 
 .card.effect__click.flipped .card__front {
@@ -498,7 +513,7 @@ header {
 
 .page_title {
     color: #7e623c;
-    font-size: 3vw;
+    font-size: 2vw;
     padding:0vw;
     margin: 0vw;}}
 
@@ -626,7 +641,7 @@ header {
 }
 .page_title {
     color: #7e623c;
-    font-size: 6vw;
+    font-size: 3vw;
     padding:0vw;
     margin: 0vw;
 }     
@@ -756,7 +771,7 @@ header {
 }
 .page_title {
     color: #7e623c;
-    font-size: 6vw;
+    font-size: 3vw;
     padding:0vw;
     margin: 0vw;
 } 
@@ -871,8 +886,26 @@ header {
 }
 .page_title {
     color: #7e623c;
-    font-size: 7vw;
+    font-size: 3vw;
     padding:0vw;
     margin: 0vw;
 }
+
+.card__text {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-box-align: center;  
+    -webkit-align-content: center;  
+        -ms-flex-align: center;  
+            align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; 
+  margin: 10vw 6vw 0vw 6vw;
+  color: #fff;
+  font-size: 4.5vh;
+  line-height: 5vh;
 }
