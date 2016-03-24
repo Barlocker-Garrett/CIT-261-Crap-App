@@ -244,18 +244,6 @@ header {
     animation-name: shake; 
 }
 
-/*
- * Site Title under logo
-*/
-
-.page_title {
-    font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
-    color: #7e623c;
-    font-size: 1.5vw;
-    padding:0vw;
-    margin: 0vw;
-}
-
 /**
  * Sections
  *
@@ -277,9 +265,19 @@ header {
 .page_title {
     font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
     color: #7e623c;
-    font-size: 1.5vw;
+    font-size: 3vw;
     padding:0vw;
     margin: 0vw;
+    text-align: center;
+}
+
+.page_title #title {
+    font-family: 'Luckiest Guy', 'Arial Black', Imapct, sans-serif;
+    color: #7e623c;
+    font-size: 2vw;
+    padding:0vw;
+    margin: 2vw 0vw;
+    text-align: left;
 }
 /*
  * The cards
@@ -515,7 +513,10 @@ header {
     color: #7e623c;
     font-size: 2vw;
     padding:0vw;
-    margin: 0vw;}}
+    margin: 0vw;
+    text-align: center;
+    }
+}
 
 @media (min-width:768px) and (max-width:1279px) {
 
@@ -886,9 +887,19 @@ header {
 }
 .page_title {
     color: #7e623c;
-    font-size: 3vw;
+    font-size: 6vw;
     padding:0vw;
     margin: 0vw;
+    text-align: center;
+}
+.page_title #title {
+    margin: 2vw 0vw;
+    font-size: 3vw;
+}
+
+.card {
+    height: 80vh;
+    width: 90vw;
 }
 
 .card__text {
@@ -904,8 +915,9 @@ header {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; 
-  margin: 10vw 6vw 0vw 6vw;
+  margin: 5vw 3vw 0vw 3vw;
   color: #fff;
-  font-size: 4.5vh;
-  line-height: 5vh;
+  font-size: 5.5vh;
+  line-height: 6vh;
+}
 }
