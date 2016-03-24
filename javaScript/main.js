@@ -2,7 +2,7 @@ var httpRequest;
 
 // This NumContent object is used for the splicing, this acts "like" an ENUM
 var NumContent;
-var Content = [];
+var Content = []; // I think this is unneeded? -Garrett
               
 function loadContent() {
     makeRequest('content.json');
@@ -39,8 +39,8 @@ function alertContents() {
 
 function loadObjectsFromLocal() {
     NumContent = Object.freeze({"total": JSON.parse(localStorage.Content).length,
-        "jokes": 16,
-        "facts": 38});
+        "jokes": 50,
+        "facts": 52});
     
     // IF WE NEED TO RESET THE CONTENT
     if (Content.length < 1) {  
