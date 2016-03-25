@@ -29,7 +29,8 @@
 					
 			<section class="st-panel st-color" id="st-panel-2">
 			<div class="st-deco" data-icon="R"></div>
-				<h2>Poop Jokes</h2>
+			<div id="Topic" title="Jokes" class="page_title">
+                        <h2 id="title">Poop Jokes</h2>
 						
                             <div id="card">
                             <div class="card-container">  
@@ -45,12 +46,14 @@
                                 
                             </div>
                             </div>
+                        </div>
                         </section>
 					   
                     
                         <section class="st-panel" id="st-panel-3">
 			<div class="st-deco" data-icon="Q"></div>
-				<h2>Poop Facts</h2>
+			<div id="Topic" title="Facts" class="page_title">
+                        <h2 id="title">Poop Facts</h2>
 						
                         <div id="card">
                             <div class="card-container">  
@@ -66,6 +69,7 @@
                                 
                             </div>
                             </div>
+                        </div>
 			</section>
 
 			</div><!-- // st-scroll -->
