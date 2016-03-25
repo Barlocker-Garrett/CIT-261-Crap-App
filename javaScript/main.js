@@ -86,18 +86,40 @@ function loadObjectsFromLocal() {
 
 function selectContent() {
     var index;
+    var secondindex;
+    var title = document.getElementById('Topic').title;
 
     index = Math.floor(Math.random() * Content.length);
-
+    if (document.getElementById('Topic').title === 'Facts') {
+    	if (index === (Content.length - 1)) {
+    		secondindex = index - 1;
+    	} else {
+    		secondindex = index + 1;
+    	}
+	}
+	
     if (document.getElementById('Topic').title === 'Jokes') {
         document.getElementById("text").innerHTML = Content[index].joke;
         document.getElementById("pun").innerHTML = Content[index].pun;
     } else if (document.getElementById('Topic').title === 'Facts') {
         document.getElementById("text").innerHTML = Content[index].fact;
-        document.getElementById("pun").innerHTML = " ";
+        if (Content.length > 1) {
+        	document.getElementById("pun").innerHTML = Content[secondindex].fact;
+        } else if (Content.length === 1) {
+        	document.getElementById("pun").innerHTML = "Click for next fact.";
+        }
     }
-
-    Content.splice(index, 1);
+	
+	if (document.getElementById('Topic').title === 'Jokes') {
+    	Content.splice(index, 1);
+    } else if (document.getElementById('Topic').title === 'Facts') {
+    	if (index === Content.length - 1) {
+    	 	Content.splice(secondindex, 2);
+    	} else if (index < Content.length - 1){
+    		Content.splice(index, 2);
+    	}
+    }
+    
     if (document.getElementById('Topic').title === 'Jokes') {
         localStorage.removeItem("Jokes");
         localStorage.setItem("Jokes", JSON.stringify(Content));
@@ -145,6 +167,7 @@ function clickListener(card) {
 		if (c.contains("flipped") === true) {
 			c.remove("flipped");
 			loadObjectsFromLocal();
+			
 		}
 		else {
 			 c.add("flipped");
