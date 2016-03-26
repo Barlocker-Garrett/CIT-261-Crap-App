@@ -13,9 +13,9 @@
                 <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
 			<a href="#st-panel-1">Fun Poop</a>
 		<input type="radio" name="radio-set" id="st-control-2"/>
-			<a href="#st-panel-2" onclick="changeToJokes()">Poop Jokes</a>
+			<a href="#st-panel-2">Poop Jokes</a>
                 <input type="radio" name="radio-set" id="st-control-3"/>
-			<a href="#st-panel-3" onclick="changeToFacts()">Poop Facts</a>
+			<a href="#st-panel-3">Poop Facts</a>
 				
                     <div class="st-scroll">
 					
@@ -29,8 +29,8 @@
 					
 			<section class="st-panel st-color" id="st-panel-2">
 			<div class="st-deco" data-icon="R"></div>
-			<div id="Topic" title="Jokes" class="page_title">
-                        <h2 id="title">Poop Jokes</h2>
+			<div class="Topic" title="Jokes" class="page_title">
+                        <h2>Poop Jokes</h2>
 						
                             <div id="card">
                             <div class="card-container">  
@@ -52,18 +52,18 @@
                     
                         <section class="st-panel" id="st-panel-3">
 			<div class="st-deco" data-icon="Q"></div>
-			<div id="Topic" title="Facts" class="page_title">
-                        <h2 id="title">Poop Facts</h2>
+			<div class="Topic" title="Facts" class="page_title">
+                        <h2>Poop Facts</h2>
 						
-                        <div id="card">
+                        <div>
                             <div class="card-container">  
                                 
                                 <div class="card effect__click">
                                     <div class="card__front">
-                                        <span class="card__text" id="text"></span>
+                                        <span class="card__text" id="fact"></span>
                                     </div>
                                     <div class="card__back">
-                                        <span class="card__text" id="pun"></span>
+                                        <span class="card__text" id="factBack"></span>
                                     </div>
                                 </div>
                                 
@@ -80,6 +80,5 @@
             <footer>
                 <?php include $_SERVER['DOCUMENT_ROOT'].'/modules/footer.php'; ?>
             </footer>
-        </section>
     </body>
 </html>
