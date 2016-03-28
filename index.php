@@ -11,7 +11,7 @@
 		<div class="st-container">
 			
                 <input type="radio" name="radio-set" checked="checked" id="st-control-1"/>
-			<a href="#st-panel-1">Fun Poop</a>
+			<a href="#st-panel-1">Intro</a>
 		<input type="radio" name="radio-set" id="st-control-2"/>
 			<a href="#st-panel-2">Poop Jokes</a>
                 <input type="radio" name="radio-set" id="st-control-3"/>
@@ -21,7 +21,7 @@
 					
 			<section class="st-panel" id="st-panel-1">
 			<div class="st-deco" data-icon="O"></div>
-                            <h2>Fun With Poop</h2>
+                            <h2>Pass Time on the Throne</h2>
 			<p>
                             <img id="logo"  src="/images/poop_logo.png">
                         </p>
