@@ -61,6 +61,7 @@ function loadObjectsFromLocal() {
         Content = JSON.parse(localStorage.Jokes);
     } // THE JOKES KEY NEEDS TO SPLICED INTO LOCAL STORAGE FROM CONTENT KEY
     else if (document.getElementsByClassName("Topic").title === 'Jokes') {
+        Content = JSON.parse(localStorage.Content);
         Content.splice(NumContent.jokes, NumContent.total);
         localStorage.setItem("Jokes", JSON.stringify(Content));
     }
