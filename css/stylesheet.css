@@ -359,8 +359,8 @@
             .card__back {
               -webkit-backface-visibility: hidden;
                       backface-visibility: hidden;
-              -webkit-transition: -webkit-transform 0.3s;
-              transition: transform 0.3s;
+              -webkit-transition: -webkit-transform 0.75s;
+              transition: transform 0.75s;
             }
 
             .card__front {
