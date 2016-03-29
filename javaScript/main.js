@@ -145,7 +145,7 @@ function clickListener(card) {
         var c = this.classList;
         if (c.contains("flipped") === true) {
             c.remove("flipped");
-            loadObjectsFromLocal();
+            setTimeout(loadObjectsFromLocal, 225);
 
         } else {
             c.add("flipped");
