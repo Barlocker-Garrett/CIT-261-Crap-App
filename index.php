@@ -22,7 +22,7 @@
 			<section class="st-panel" id="st-panel-1">
                             <div class="st-deco" data-icon="O"></div>
                             <div id="home">
-                                <div class="page_title">Pass Time on the Throne
+                                <div id="page_title">Pass Time on the Throne
                                 </div>
                                 <img id="logo" src="/images/poop_logo.png">
                             </div>
