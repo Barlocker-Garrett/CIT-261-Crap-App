@@ -387,7 +387,7 @@ a { text-decoration: none; }
         -ms-flex-pack: center;
             justify-content: center;
     height: 82vh;
-    width: 82vw;
+    width: 100vw;
     text-align: center; 
  }
 
@@ -479,7 +479,7 @@ a { text-decoration: none; }
 .card-container {
     position: relative;
     height: 57vh;
-    width: 80vw;
+    width: 90vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -587,7 +587,7 @@ a { text-decoration: none; }
 .card-container {
     position: relative;
     height: 65vh;
-    width: 80vw;
+    width: 90vw;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
