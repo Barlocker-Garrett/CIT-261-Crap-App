@@ -20,6 +20,7 @@
                     <div class="st-scroll">
 					
 			<section class="st-panel" id="st-panel-1">
+                            <div class="st-deco" data-icon="O"></div>
                             <div id="home">
                                 <div id="page_title">Pass Time on the Throne
                                 </div>
@@ -30,6 +31,9 @@
 					
 			<section class="st-panel st-color" id="st-panel-2">
                             <div class="Topic" title="Jokes" class="page_title"></div>
+                            <div id="deco-title">    
+                                <div class="st-deco" data-icon="R"></div>
+                            </div>
 
                             <div class="card">
                                 <div class="card-container">  
@@ -52,6 +56,10 @@
                     
                         <section class="st-panel" id="st-panel-3">
                             <div class="Topic" title="Facts" class="page_title"></div>
+                            <div id="deco-title">   
+                                <div class="st-deco" data-icon="Q"></div>
+                                
+                            </div>
                             
                             <div class="card">
                                 <div class="card-container">  
